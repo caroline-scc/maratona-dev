@@ -1,0 +1,23 @@
+/*
+CASCADING STYLESHEET
+*/
+
+
+/*ALINHAMENTOS, ESPAÇAMENTOS, LARGURAS E ALTURAS*/
+header, main, footer {
+	text-align: center;
+}
+
+.donors{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+header, .form, main{
+	margin-bottom: 70px;
+}
