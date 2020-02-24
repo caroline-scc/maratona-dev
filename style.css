@@ -1,9 +1,11 @@
-/*
-CASCADING STYLESHEET
-*/
+html, body{
+	margin: 0
+}
 
-
-/*ALINHAMENTOS, ESPAÇAMENTOS, LARGURAS E ALTURAS*/
+*{
+	box-sizing: border-box;
+	align-items: center;
+}
 header, main, footer {
 	text-align: center;
 }
@@ -13,11 +15,76 @@ header, main, footer {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.form{
+section.form{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 45px;
+	background-color: #ff4f4f;	
+	padding: 16px 64px;
+	align-items: center;
+	border-radius: 6px;
 }
 
-header, .form, main{
+header, main, footer{
 	margin-bottom: 70px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	font-family: 'Roboto', 'sans-serif';
+	background-color: #f9f9f9;
+}
+
+header, .form, main{                                  
+	margin-bottom: : 0 auto 70pX;                     
+	width: 90%;
+	max-width: 500px; 	
+	
+}
+
+header h1, main h2{
+	margin-bottom: 70px;
+}
+ 
+. form h2{
+	text-align: right;
+	color: #ffffffee;
+	font-size: 18px;
+}
+form input, form button{
+	width: 100%
+	margin-bottom: 4px;
+	padding: 8px 16px;
+	border-radius: 4px;
+	border: 1px white solid;
+	background: white;
+
+}
+
+form input{
+	background-color: transparent;
+}
+
+form input::placeholder{
+	color:#ffffffee;
+}
+
+footer {
+	margin-top: auto;
+	padding: 16px;
+
+	border: 1px solid #eee;
+}
+
+header button{
+	margin-top: 16px;	
+	padding: 8px 16px;
+	border-radius: 4px;
+	background-color: #ff4f4f;
+	color: white;
+	font-weight: bold;
+	border: none;
+
 }
