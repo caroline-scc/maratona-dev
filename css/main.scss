@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+/*Variáveis*/
+$main-red: #ef5350;
+$secundario-red:#ffcdd2;
+$main-black: #313131;
+$main-white: #FAFAFA;
+$back-color: #f5f5f5;
+$borda-red:#d32f2f;
+$borda-cinza:#E0E0E0;
+$border-radius:4px;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', ;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: $back-color;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  color: $main-black;
+  
+    h1{
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: center;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    h1 p{
+      margin: 4px;
+      width: 40px;
+      height: 40px;
+      background-color: $main-red;
+      border-radius: 50%;
+      border-top-right-radius: 0;
+      transform: rotate(-45deg);
+    }
+
+    h2{
+      span{
+        color: $main-red;
+      }
+    }
+    .header{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      
+        p{
+          margin-top: 15px;
+        }
+
+        button{
+          margin-top: 20px;
+          width: 20%;
+          height: 38px;
+          background-color: $main-red;
+          border: solid 1px $borda-red;
+          border-radius: $border-radius;
+          font-size: 1em;
+          color: $main-white;
+          font-weight: bold;
+          outline: none;
+            &:active{
+              transform: scale(0.99);
+              outline: $borda-red;
+            }
+        }
+    }
+}
+
+/*Configuração do formulário*/
+.formulario{
+  width: 40%;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $main-red;
+  border-radius: $border-radius;
+  font-weight: bold;
+  transition: all 300ms;
+    h2{
+      width: 40%;
+      color: $main-white;
+    }
+    form{
+      width: 40%;
+      height: 200px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    input{
+      width: 100%;
+      height: 38px;
+      border: solid 2px $main-white; 
+      border-radius: $border-radius;
+      outline: none;
+      font-size: 1em;
+      padding: 0 12px;
+      background: none;
+        &::placeholder{
+          color: $main-white;
+        }
+    }
+    button{
+      width: 58%;
+        height: 38px;
+        background-color: $main-white;
+        border: solid 1px $borda-cinza;
+        border-radius: $border-radius;
+        font-weight: bold;
+        font-size: 1em;
+        color: $main-black;
+        outline: none;
+          &:active{
+            transform: scale(0.99);
+            outline: $borda-red;
+          }
+    }
+}
+
+/*Seção dos doadores*/
+.doadores{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+    .sangue{
+      color: $main-red;
+      font-weight: bold;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+        &::before{
+          content: "";
+          background-color: $secundario-red;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          z-index: -1;
+          border-radius: 50%;
+          border-top-right-radius: 0;
+          transform: rotate(-45deg);
+        }
+    }
+    p{
+      margin-top: 15px;
+    }
+}
+
+/*Rodapé*/
+.rodape{
+  border-top: solid 1px $borda-cinza;
+  width: 90%;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  p{
+    color: $main-red;
+  }
+}
+
+/*Classes ativadas no Javascript*/
+.hide{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
