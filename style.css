@@ -1,90 +1,99 @@
-html, body{
-	margin: 0
-}
 
 *{
-	box-sizing: border-box;
-	align-items: center;
-}
-header, main, footer {
-	text-align: center;
-}
-
-.donors{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-section.form{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 45px;
-	background-color: #ff4f4f;	
-	padding: 16px 64px;
-	align-items: center;
-	border-radius: 6px;
+    box-sizing: border-box;
 }
 
 header, main, footer{
-	margin-bottom: 70px;
+    text-align: center;
 }
 
-body{
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	font-family: 'Roboto', 'sans-serif';
-	background-color: #f9f9f9;
+.donors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-header, .form, main{                                  
-	margin-bottom: : 0 auto 70pX;                     
-	width: 90%;
-	max-width: 500px; 	
-	
+section.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+
+    align-items: center;
+
+    background-color: #ff4f4f;  
+
+    padding: 16px 64px;
+
+    border-radius: 6px;
+
+    
 }
 
-header h1, main h2{
-	margin-bottom: 70px;
-}
- 
-. form h2{
-	text-align: right;
-	color: #ffffffee;
-	font-size: 18px;
-}
-form input, form button{
-	width: 100%
-	margin-bottom: 4px;
-	padding: 8px 16px;
-	border-radius: 4px;
-	border: 1px white solid;
-	background: white;
 
+header, main, footer{
+    margin-bottom: 70px;
 }
 
-form input{
-	background-color: transparent;
+html, body {
+    margin: 0;
 }
 
-form input::placeholder{
-	color:#ffffffee;
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    background-color: #f9f9f9;
 }
 
-footer {
-	margin-top: auto;
-	padding: 16px;
-
-	border: 1px solid #eee;
+header, .form, main {
+    margin-bottom: 0 auto 70px;
+    width: 90%;
+    max-width: 500px;
+            
 }
 
 header button{
-	margin-top: 16px;	
-	padding: 8px 16px;
-	border-radius: 4px;
-	background-color: #ff4f4f;
-	color: white;
-	font-weight: bold;
-	border: none;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    background-color: #ff4f4f;
+    color: white;   
+    border: none;
+
+    font-weight: bold;
+}
+
+header h1, main h2 {
+    margin-bottom: 70px;
+
+}
+
+.form h2 {
+    text-align: center;
+    margin-right: 50px;
+
+    color: white;
+}
+
+form input,
+form button {
+    
+    width: 100%;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px white solid;
+
+    
+}
+
+
+footer{
+    margin-top: auto;
+    padding: 16px;
+
+    border: 1px solid #eee;
 
 }
